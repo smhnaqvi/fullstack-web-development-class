@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invoice generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-area">
+            <form id="invoice-form" onsubmit="addItem(event)">
+                <div>
+                    <label for="fruit">Select fruit</label>
+                    <select class="text-field w-full" name="fruit" id="fruit">
+                        <option value="apple">Apple</option>
+                        <option value="banana">Banana</option>
+                        <option value="orange">Orange</option>
+                        <option value="pineapple">Pineapple</option>
+                        <option value="strawberry">Strawberry</option>
+                        <option value="watermelon">Watermelon</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="quantity">Quantity</label>
+                    <input class="text-field w-full" type="number" name="quantity" id="quantity">
+                </div>  
+                <div>
+                    <label for="price">Price</label>
+                    <input class="text-field w-full" type="number" name="price" id="price">
+                </div>
+
+                <button class="btn-primary w-full" type="submit">add to invoice</button>
+            </form>
+        </div>
+        
+        <div class="invoice-area">
+            <table id="invoice-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="invoice-body"></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td id="total">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="action-area">
+                <button class="btn-danger" onclick="clearInvoice()">Clear Invoice</button>
+                <button class="btn-primary" onclick="printInvoice()">Print Invoice</button>
+            </div>
+            
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>
