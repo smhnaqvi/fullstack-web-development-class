@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom Dom Event</title>
+    <style>
+        * {
+            padding:0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="content">-</h1>
+    <script>
+
+        var counter = parseInt(prompt("enter count down:"));
+        let element = document.getElementById("content");
+
+        element.style.height = "100vh"
+        element.style.textAlign = "center"
+        element.style.backgroundColor = "#000"
+        element.style.color = "#FFF"
+        element.style.display = "flex"
+        element.style.alignItems = "center"
+        element.style.justifyContent = "center"
+        element.style.fontSize = "100px"
+
+        element.innerText = counter;
+         
+        var interval = setInterval(() => {
+            counter--;
+            if(counter === 0){
+                element.innerText = "End";
+                clearInterval(interval);
+            }else{
+                element.innerText = counter;
+            }
+        },1000)
+    </script>
+</body>
+</html>
