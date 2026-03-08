@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #075E54;
+    --secondary-color: #128C7E;
+    --tertiary-color: #25D366;
+    --quaternary-color: #DCF8C6;
+    --quinary-color: #34B7F1;
+    --background-color: #ECE5DD;
+}
+
+.container {
+    width: 1400px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-area{
+    background: white;
+    border: 1px solid var(--primary-color);
+    padding: 0;
+    width: 100%;
+    margin: 14px;
+}
+
+
+.user-profile {
+    border-bottom: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 12px;
+    color: white;
+}
+
+.avatar {
+    background-color: blueviolet;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white
+}
+
+.chat-area > .user-chat {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.messages-area {
+    display: flex;
+    align-items: flex-start;
+    padding: 14px;
+    height: 100%;
+    background-color: var(--background-color);
+    flex-direction: column;
+    gap: 14px;
+}
+
+.messages-area > .chat-box {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.messages-area > .chat-box.sender-left {
+    justify-content: flex-start;
+}
+
+.messages-area > .chat-box.reply-right {
+    /* justify-content: flex-end; */
+    flex-direction: row-reverse;
+}
+
+.chat-box > .user-chat {
+    height: auto;
+    max-width: 260px;
+    background-color: var(--quaternary-color);
+    border-radius: 14px 14px 14px 4px;
+    padding: 8px 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.chat-box.reply-right > .user-chat {
+    background-color: #ffffff;
+    border-radius: 14px 14px 4px 14px;
+}
+
+.chat-box > .user-chat .text {
+    margin-bottom: 4px;
+    color: #1f2937;
+}
+
+.chat-box > .user-chat p:last-child {
+    font-size: 12px;
+    color: #6b7280;
+    text-align: right;
+}
+
+.form-area {
+    background-color: var(--background-color);
+}
+.form-area form {
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.form-area input {
+    width: 90%;
+    padding: 8px 12px;
+    border: 1px solid  var(--tertiary-color);
+    border-radius: 4px;
+}
+
+.form-area button {
+    background-color: var(--tertiary-color);
+    border: none;
+    color:white;
+    padding: 9px 12px;
+    border-radius: 4px;
+}

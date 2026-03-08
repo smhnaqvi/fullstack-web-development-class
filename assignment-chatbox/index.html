@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="chat-area">
+            <div class="user-profile">
+                <div class="avatar">M</div>
+                <p>Mumammad</p>
+            </div>
+              <div id="chat-1" class="user-chat">
+                <div class="messages-area"></div>
+                <div class="form-area">
+                    <form id="chat-1-form" onsubmit="submitform('chat-1', event)">
+                        <input class="input" name="messageinput" placeholder="write message">
+                        <button class="submit-button" type="submit" form="chat-1-form">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="chat-area">
+            <div class="user-profile">
+                <div class="avatar">H</div>
+                <p>Hussain</p>
+            </div>
+            <div id="chat-2" class="user-chat">
+                <div class="messages-area"></div>
+                <div class="form-area">
+                    <form id="chat-2-form" onsubmit="submitform('chat-2', event)">
+                        <input class="input" name="messageinput" placeholder="write message">
+                        <button class="submit-button" type="submit" form="chat-2-form">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
