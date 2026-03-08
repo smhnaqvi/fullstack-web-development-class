@@ -1,1 +1,3 @@
 This assignment is a simple chatbox UI built with HTML, CSS, and JavaScript. It shows a two-user chat layout where each user can type and send messages in their own chat area.
+
+![Assignment Chatbox Screenshot](./screenshot-2026-03-09.png)
