@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slider</title>
+</head>
+<body>
+    
+    <div class="container">
+    <div class="slide-prev-container">
+        <img id="mainSlide" width="300" height="300">
+    </div>
+    <div class="slider">
+        <img onclick="displayImage('https://www.junaidjamshed.com/cdn/shop/files/jds-26-1280s_1_762b69ed-f8d1-4171-95ab-ec6771ad24c4.jpg?v=1776974812&width=823')" src="https://www.junaidjamshed.com/cdn/shop/files/jds-26-1280s_1_762b69ed-f8d1-4171-95ab-ec6771ad24c4.jpg?v=1776974812&width=823" alt="">
+        <img onclick="displayImage('https://www.junaidjamshed.com/cdn/shop/files/jds-26-1280s_2_0d317ce2-8eea-4529-bd67-5f99199c3568.jpg?v=1776974813&width=823')" src="https://www.junaidjamshed.com/cdn/shop/files/jds-26-1280s_2_0d317ce2-8eea-4529-bd67-5f99199c3568.jpg?v=1776974813&width=823" alt="">
+        <img onclick="displayImage('https://www.junaidjamshed.com/cdn/shop/files/jds-26-1280s_4_ede67300-29a9-48bc-a382-5ee25a1b7ba8.jpg?v=1776974813&width=823')" src="https://www.junaidjamshed.com/cdn/shop/files/jds-26-1280s_4_ede67300-29a9-48bc-a382-5ee25a1b7ba8.jpg?v=1776974813&width=823" alt="">
+        <img onclick="displayImage('https://www.junaidjamshed.com/cdn/shop/files/jds-26-1280s_3_587c8e4c-4014-4da1-bc01-51e86e643113.jpg?v=1776974813&width=823')" src="https://www.junaidjamshed.com/cdn/shop/files/jds-26-1280s_3_587c8e4c-4014-4da1-bc01-51e86e643113.jpg?v=1776974813&width=823" alt="">
+        <img onclick="displayImage('https://www.junaidjamshed.com/cdn/shop/files/jds-26-1280s_5_e8c1a2c6-e121-4cc4-92bc-855460f6bcdb.jpg?v=1776974813&width=823')" src="https://www.junaidjamshed.com/cdn/shop/files/jds-26-1280s_5_e8c1a2c6-e121-4cc4-92bc-855460f6bcdb.jpg?v=1776974813&width=823" alt="">
+    </div>
+    </div>
+    <script>
+        
+
+        function displayImage(e) {
+            console.log(e)
+            let mainSlide = document.getElementById("mainSlide")
+            mainSlide.src = e;
+        }
+    </script>
+</body>
+</html>
